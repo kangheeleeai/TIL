@@ -1,0 +1,8 @@
+Wizard-of-Oz의 약자
+
+Task-oriented dialogue systems을 위한 데이터 셋
+
+수집 방법:
+- Amazon Mechanical Turk 사용
+- 크라우드 소싱 환경에서 두 명의 임의의 참여자가 “사용자”와 “에이전트”의 역할을 나누어 대화를 나누며 데이터를 생성 (H2H)
+- MultiWOZ는 호텔, 택시, 레스토랑, 기차 등을 포함하는 7개 영역에서의 예약과 관련된 약 1만여 개의 대화 세션들로 구성
