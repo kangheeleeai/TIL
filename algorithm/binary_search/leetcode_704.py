@@ -11,5 +11,4 @@ class Solution:
                 l = c+1
             else:
                 return c
-        return -1        
- 
+        return -1       
