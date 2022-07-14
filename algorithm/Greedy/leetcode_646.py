@@ -15,3 +15,5 @@ class Solution:
                 answer.append(pairs[i])
                 
         return len(answer)
+
+    
