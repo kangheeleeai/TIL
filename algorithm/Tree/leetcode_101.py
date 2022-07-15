@@ -22,3 +22,5 @@ class Solution:
             return True
 
         return self.check_mirror(root.left, root.right)
+
+    
