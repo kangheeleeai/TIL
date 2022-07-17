@@ -12,3 +12,5 @@ class Solution:
                 if d[s[i]] != t[i]:
                     return False
         return True
+
+    
