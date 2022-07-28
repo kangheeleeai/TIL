@@ -4,4 +4,4 @@ class Solution:
         s_splits = s.split()
         return len(s_splits[-1])
 
-    
+   
