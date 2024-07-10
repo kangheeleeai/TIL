@@ -1,0 +1,27 @@
+# https://school.programmers.co.kr/learn/courses/30/lessons/42583
+
+from collections import deque
+
+def solution(bridge_length, weight, truck_weights):
+    second = 0
+    complete = []
+    
+    queue_truck = deque(truck_weights)
+    
+    bridge_capacity = deque([0]*bridge_length, maxlen=bridge_length)
+    size = len(truck_weights)
+    
+    while True:
+        second += 1
+        bridge_out = bridge_capacity.popleft()
+        
+        if bridge_out != 0:
+            complete.append(bridge_out)
+            if len(complete) >= size:
+                return second
+            
+        if len(queue_truck) > 0: 
+            if sum(bridge_capacity) + queue_truck[0] <= weight:
+                bridge_capacity.append(queue_truck.popleft())
+            else:
+                bridge_capacity.append(0)
